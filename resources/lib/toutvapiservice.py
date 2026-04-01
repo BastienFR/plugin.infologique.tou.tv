@@ -14,6 +14,7 @@ if sys.version_info.major >= 3:
     # Python 3 stuff
     from urllib.parse import quote_plus, unquote_plus, urlencode
     import urllib.parse
+    from urllib.request import build_opener, HTTPCookieProcessor, HTTPHandler, Request, urlopen
     from io import StringIO as StringIO 
     import http.cookiejar as cookielib
 else:
